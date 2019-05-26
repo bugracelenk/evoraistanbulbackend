@@ -35,3 +35,4 @@ app.use("/api/users", userRoutes);
 app.use("/api/mainpage", mainPageRoutes)
 
 module.exports = app;
+

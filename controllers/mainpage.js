@@ -21,7 +21,7 @@ exports.get_services = (req, res, next) => {
     });
 };
 
-exports.add_services = (req, res, next) => {
+exports.add_service = (req, res, next) => {
   const service = new Service({
     name: req.body.name,
     image: req.body.image
