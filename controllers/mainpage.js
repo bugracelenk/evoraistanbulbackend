@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Service = require("../models/User");
+const Service = require("../models/Service");
 
 exports.get_services = (req, res, next) => {
   Service.find()
