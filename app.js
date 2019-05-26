@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require("body-parser");
 
 const userRoutes = require("./routes/users");
+const mainPageRoutes = require("./routes/mainpage");
 
 mongoose
   .connect(
@@ -31,5 +32,6 @@ app.use((req, res, next) => {
 });
 
 app.use("/api/users", userRoutes);
+app.use("/api/mainpage", mainPageRoutes)
 
 module.exports = app;
