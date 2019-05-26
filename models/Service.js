@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 
-const Service = mongoose.Model(
-  "Service",
-  new mongoose.Schema({
+const Service = mongoose.model("Service",new mongoose.Schema({
     name: String,
     image: String
   })
